@@ -11,8 +11,10 @@ html, body, * {
 .wrapper {
   display: grid;
   grid-template-areas:
-    "leftGap centre rightGap";
+    "leftGap centre rightGap"
+    "empty empty empty";
   grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 10rem;
 }
 
 .wrapper-contents {
