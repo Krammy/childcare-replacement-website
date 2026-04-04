@@ -111,3 +111,34 @@ input, textarea {
     margin: 1rem;
     margin-bottom: 10rem;
 }
+
+@media (min-width: 58.5rem) {
+    .wrapper {
+        justify-content: left;
+    }
+
+    .wrapper-contents {
+        margin-left: 10vw;
+    }
+
+    .phoneOnly {
+        display: none;
+    }
+
+    #contactSection {
+        position: fixed;
+        top: 1rem;
+        right: 4rem;
+    }
+}
+
+#submit {
+    display: block;
+    cursor: pointer;
+    background-color: lightslategray;
+    color: white;
+    border-radius: 0.25rem;
+    border-color: grey;
+    margin-left: auto;
+    padding: 0.6rem 1.9rem 0.6rem 1.9rem;
+}
