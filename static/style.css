@@ -6,6 +6,16 @@ html, body {
     font-size: 4vw;
 }
 
+#contact-error {
+    display: none;
+}
+
+#error-message {
+    display: inherit;
+    color: rgb(14, 37, 94);
+    width: 21rem;
+}
+
 p, input, textarea {
     font-size: 1rem;
 }
@@ -174,5 +184,11 @@ input, textarea {
     border-radius: 0.25rem;
     border-color: grey;
     padding: 0.6rem 1.9rem 0.6rem 1.9rem;
+    transition: background-color 0.5s;
+}
+
+#submit:disabled {
+    cursor: auto;
+    background-color: grey;
 }
 

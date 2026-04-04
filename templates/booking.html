@@ -1,16 +1,20 @@
 <div id="contactSection">
     <h2 id="booking">Book a vibe check ✨️</h2>
     <p>will respond ASAP, within 12 hours</p>
-    <form name="contact" method="POST" data-netlify="true">
+    <form id="contactForm" name="contactForm" method="POST" data-netlify="true">
         <label for="name">Name</label><br>
         <input type="text" id="name" name="name"><br>
         <label for="contact">WhatsApp (or e-mail)</label><br>
-        <input type="text" id="contact" name="contact"><br>
+        <input type="text" id="contact" name="contact" aria-describedby="contact-error"><br>
+        <div id="contact-error">
+            <span id="error-message" class="error-message" role="alert" aria-live="polite">
+                Please enter a valid mobile number (+44 or 07…) or email address.
+            </span>
+        </div>
         <label for="message">Message</label><br>
         <div class="container">
-            <textarea id="message" name="message" rows="8" cols="50">Hi! I am interested in a vibe-check
-</textarea><br>
-            <input id="submit" type="submit" value="Submit">
+            <textarea id="message" name="message" rows="8" cols="50" placeholder="Hi! I am interested in a vibe check"></textarea><br>
+            <input id="submit" type="submit" value="Submit" disabled>
         </div>
     </form>
 </div>
