@@ -18,6 +18,9 @@ button {
 .profilepic {
     width: 6rem;
     height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 3px #facc15, 0 0 15px 5px rgba(250, 204, 21, 0.6);
 }
 
 html, body, * {
