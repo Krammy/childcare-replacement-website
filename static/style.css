@@ -20,7 +20,13 @@ button {
     height: 6rem;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 0 0 3px #facc15, 0 0 15px 5px rgba(250, 204, 21, 0.6);
+    box-shadow: 0 0 0 0.1875rem #facc15, 0 0 0.9375rem 0.3125rem rgba(250, 204, 21, 0.6);
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0.1875rem #facc15, 0 0 0.9375rem 0.3125rem rgba(250, 204, 21, 0.6); }
+  50%       { box-shadow: 0 0 0 0.1875rem #facc15, 0 0 1.25rem 0.4375rem rgba(250, 204, 21, 0.75); }
 }
 
 html, body, * {
