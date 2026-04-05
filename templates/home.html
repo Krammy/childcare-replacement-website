@@ -1,13 +1,12 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<div class="wrapper">
-    <div class="wrapper-contents">
-        {% include 'header.html' %}
-        {% include 'navigation.html' %}
-        <hr class="phoneOnly" />
-        {% include 'booking.html' %}
-    </div>
-</div>
+{% include 'header.html' %}
+{% include 'navigation.html' %}
+<hr class="phoneOnly" />
+{% include 'booking.html' %}
+{% endblock %}
+
+{% block after %}
 <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 {% endblock %}
