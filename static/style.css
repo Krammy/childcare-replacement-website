@@ -22,6 +22,7 @@ p, input, textarea {
 
 button {
     font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
 }
 
@@ -222,10 +223,12 @@ nav {
 
 .nav-btn {
     cursor: pointer;
-    background-color: lightgray;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: rgb(227, 226, 226);
     color: rgb(14, 37, 94);
     border: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     border-color: blue;
     height: 2.4rem;
     padding-left: 1rem;
