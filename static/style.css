@@ -228,9 +228,9 @@ nav {
     font-weight: 400;
     background-color: rgb(227, 226, 226);
     color: rgb(14, 37, 94);
-    border: 2rem;
+    border: 0.1rem solid;
     border-radius: 0.8rem;
-    border-color: blue;
+    border-color: rgb(168, 168, 168);
     height: 2.4rem;
     padding-left: 1rem;
     padding-right: 1rem;
