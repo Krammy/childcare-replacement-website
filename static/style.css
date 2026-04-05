@@ -202,26 +202,24 @@ input, textarea {
 
 #submit {
     cursor: pointer;
-    background-color: #323d5a;
+    background-color: #778899;
     color: white;
-    border-style: solid;
     border-radius: 1.1rem;
-    border-width: 0.05rem;
-    border-color: rgb(54, 54, 54);
+    border-color: grey;
     margin-top: 1rem;
     padding: 0.5rem 1.8rem 0.5rem 1.8rem;
     transition: background-color 0.5s, color 0.5s;
 }
 
 #submit:hover {
-    background-color: #394567;
+    background-color: rgb(116, 138, 162);
     transition: background-color 0.2s, color 0.2s;
 }
 
 #submit:disabled {
     cursor: auto;
     color: rgb(136, 136, 136);
-    background-color: #464646;
+    background-color: rgb(99, 99, 99);
 }
 
 nav {
