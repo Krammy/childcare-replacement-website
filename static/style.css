@@ -1,9 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 html, body {
     font-size: 4vw;
+}
+
+.review {
+    margin-bottom: 1rem;
+}
+
+.review:last-child {
+    margin-bottom: 0;
 }
 
 #contact-error {
@@ -61,7 +75,11 @@ button {
 }
 
 .image-caption {
-    padding-top: 0.5rem;
+    padding-top: 0.8rem;
+}
+
+.profile-section {
+    margin-bottom: 1.6rem;
 }
 
 .profile-container {
@@ -69,7 +87,6 @@ button {
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    margin: 0 auto;
 }
 
 @keyframes pulse-glow {
@@ -84,8 +101,22 @@ html, body, * {
     font-size: 1rem;
 }
 
+p, ul {
+    padding-bottom: 1rem;
+}
+
+p:last-child, ul:last-child {
+    padding-bottom: 0;
+}
+
 h2, h3 {
     color: rgb(14, 37, 94);
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-left: 2rem;
+    margin-bottom: 0.1rem;
 }
 
 h2 {
@@ -166,6 +197,7 @@ input, textarea {
 .wrapper-contents {
     width: 37rem;
     margin: 1rem;
+    margin-top: 2rem;
     margin-bottom: 10rem;
 }
 
@@ -226,7 +258,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding-bottom: 0.2rem;
+    padding-bottom: 0.3rem;
 }
 
 .nav-btn {
