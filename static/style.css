@@ -192,3 +192,31 @@ input, textarea {
     background-color: grey;
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+hr {
+    color: #ccc;
+}
+
+.page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.page.visible {
+    display: block;
+}
+
+.page.active {
+    opacity: 1;
+}
+
+.page-container {
+    padding: 1.5rem;
+}

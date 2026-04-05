@@ -62,3 +62,40 @@ function validateContactField(value) {
 
     return false;
 }
+
+const buttons = document.querySelectorAll('.nav-btn');
+const pages = document.querySelectorAll('.page');
+let current = null;
+
+function showPage(targetId) {
+    const next = document.getElementById(targetId);
+    if (next === current) return;
+
+    const fadeIn = () => {
+    if (current) {
+        current.classList.remove('visible', 'active');
+    }
+    current = next;
+    next.classList.add('visible');
+    // Small delay so display:block has taken effect before opacity transitions
+    requestAnimationFrame(() => requestAnimationFrame(() => next.classList.add('active')));
+    };
+
+    if (current) {
+    current.classList.remove('active');
+    current.addEventListener('transitionend', fadeIn, { once: true });
+    } else {
+    fadeIn();
+    }
+}
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    showPage(btn.dataset.target);
+    });
+});
+
+// Show home by default
+document.querySelector('[data-target="pricing"]').click();

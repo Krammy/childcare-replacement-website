@@ -1,2 +1,11 @@
-<p>£15.50 / hour</p>
-<p>(£12.40 / hour using Ofsted prices (tax-free childcare))</p>
+{% extends 'section.html' %}
+{% block name %}pricing{% endblock %}
+
+{% block contents %}
+<h2>Pricing</h2>
+<ul>
+    <li>£15.50 / hour</li>
+    <li>£12.40 / hour including Ofsted discount (80%, tax-free childcare)</li>
+    <li>Registered with the Childcare Grant Payment Service</li>
+</ul>
+{% endblock %}
