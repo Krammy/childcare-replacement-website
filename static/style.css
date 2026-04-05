@@ -199,6 +199,18 @@ nav {
     padding: 1rem;
 }
 
+.nav-btn {
+    cursor: pointer;
+    background-color: lightgray;
+    color: rgb(14, 37, 94);
+    border: 2rem;
+    border-radius: 0.5rem;
+    border-color: blue;
+    height: 2.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 hr {
     color: #ccc;
 }
