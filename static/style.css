@@ -230,6 +230,7 @@ input, textarea {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-end; /* button hugs the right */
+  gap: 1rem;
 }
 
 #submit {
@@ -238,7 +239,7 @@ input, textarea {
     color: white;
     border-radius: 1.1rem;
     border-color: grey;
-    margin-top: 1rem;
+    margin-top: 0;
     padding: 0.5rem 1.8rem 0.5rem 1.8rem;
     transition: background-color 0.5s, color 0.5s;
 }
