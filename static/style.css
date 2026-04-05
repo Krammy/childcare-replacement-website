@@ -49,6 +49,27 @@ button {
     pointer-events: none; /* so it doesn't block clicks on the real element */
 }
 
+.top-label {
+    padding-top: 0rem;
+    margin-top: 0rem;
+    color: #3e3e3e;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.image-caption {
+    padding-top: 0.5rem;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 @keyframes pulse-glow {
   0%, 100% { box-shadow: 0 0 0 0.1875rem #facc15, 0 0 0.9375rem 0.3125rem rgba(250, 204, 21, 0.6); }
   50%       { box-shadow: 0 0 0 0.1875rem #facc15, 0 0 1.25rem 0.4375rem rgba(250, 204, 21, 0.75); }
