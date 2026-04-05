@@ -219,7 +219,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 .nav-btn {
@@ -252,8 +252,4 @@ hr {
 
 .page.active {
     opacity: 1;
-}
-
-.page-container {
-    padding: 1.5rem;
 }
