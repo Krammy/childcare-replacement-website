@@ -205,7 +205,7 @@ input, textarea {
     display: block;
 }
 
-@media (min-width: 58.5rem) {
+@media (min-width: 68rem) {
     .wrapper {
         justify-content: left;
     }
@@ -220,8 +220,8 @@ input, textarea {
 
     #contactSection {
         position: fixed;
-        top: 1rem;
-        right: 4rem;
+        top: 2rem;
+        right: 5vw;
         width: auto;
     }
 }
