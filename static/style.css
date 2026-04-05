@@ -219,7 +219,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding-top: 0.6rem;
+    padding-bottom: 0.2rem;
 }
 
 .nav-btn {
@@ -238,8 +238,8 @@ nav {
 
 hr {
     color: #ccc;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .page {
