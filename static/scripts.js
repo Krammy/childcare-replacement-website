@@ -91,8 +91,8 @@ function showPage(targetId) {
 
 buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-        buttons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+        buttons.forEach(b => b.classList.remove('nav-btn-selected'));
+        btn.classList.add('nav-btn-selected');
         showPage(btn.dataset.target);
     });
 });

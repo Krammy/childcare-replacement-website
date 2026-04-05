@@ -234,6 +234,11 @@ nav {
     height: 2.4rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    transition: background-color 0.15s;
+}
+
+.nav-btn-selected {
+    background-color: rgb(186, 186, 186);
 }
 
 hr {
