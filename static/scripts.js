@@ -13,6 +13,12 @@ const messageInput = document.getElementById('message');
 const submitBtn = document.getElementById('submit');
 const contactForm = document.getElementById('contactForm');
 
+let isSubmitting = false;
+
+contactForm.addEventListener('submit', function() {
+    isSubmitting = true;
+});
+
 function validateForm() {
     const nameValid = nameInput.value.trim() !== '';
     const messageValid = messageInput.value.trim() !== '';
@@ -95,6 +101,16 @@ buttons.forEach(btn => {
         btn.classList.add('nav-btn-selected');
         showPage(btn.dataset.target);
     });
+});
+
+function formHasInput() {
+    return nameInput.value.trim() !== '' || input.value.trim() !== '' || messageInput.value.trim() !== '';
+}
+
+window.addEventListener('beforeunload', function(e) {
+    if (formHasInput() && !isSubmitting) {
+        e.preventDefault();
+    }
 });
 
 // Show home by default
