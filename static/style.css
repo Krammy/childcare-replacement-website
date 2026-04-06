@@ -79,6 +79,10 @@ button {
     margin-bottom: 1.6rem;
 }
 
+.profile-section td {
+    vertical-align: middle;
+}
+
 .profile-container {
     display: flex;
     flex-direction: column;
@@ -98,6 +102,10 @@ html, body, * {
     font-size: 1rem;
 }
 
+i {
+    font-style: italic;
+}
+
 p, ul {
     padding-bottom: 1rem;
 }
@@ -114,6 +122,18 @@ h2, h3 {
 li {
     margin-left: 2rem;
     margin-bottom: 0.1rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td + td {
+    padding-left: 2rem;
+}
+
+td {
+    vertical-align: top;
 }
 
 h2 {
