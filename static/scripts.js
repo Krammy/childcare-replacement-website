@@ -97,5 +97,16 @@ buttons.forEach(btn => {
     });
 });
 
+function formHasInput() {
+    return nameInput.value.trim() !== '' || input.value.trim() !== '' || messageInput.value.trim() !== '';
+}
+
+window.addEventListener('beforeunload', function(e) {
+    if (formHasInput()) {
+        e.preventDefault();
+        e.returnValue = '';
+    }
+});
+
 // Show home by default
 document.querySelector('[data-target="pricing"]').click();
