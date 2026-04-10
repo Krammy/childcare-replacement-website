@@ -1,9 +1,18 @@
 let img = document.getElementById('profilepic');
 
+let isSpinning = false;
 img.addEventListener('click', () => {
+    if (isSpinning) {
+        return;
+    }
     img.classList.remove('spin-once');
     void img.offsetWidth; // forces browser to reflow — restarts the animation
     img.classList.add('spin-once');
+    isSpinning = true;
+    // turns off spin in 4 seconds, matching CSS
+    setTimeout(() => {
+        isSpinning = false;
+    }, 4000);
 });
 
 const input = document.getElementById('contact');
