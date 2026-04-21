@@ -4,9 +4,9 @@
 {% block contents %}
 <h2>Availability</h2>
 <p><i>Last updated 20/04/26</i></p>
-<table>
-    <tr>
-        <td>
+<div class="table">
+    <div class="row">
+        <div class="cell">
             <h3>Open to</h3>
             <ul>
                 <li>Overnights</li>
@@ -16,10 +16,10 @@
                 <li>Regular</li>
                 <li>Ad-hoc</li>
             </ul>
-        </td>
-        <td>
+        </div>
+        <div>
             {% include 'days-available.html' %}
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
+</div>
 {% endblock %}

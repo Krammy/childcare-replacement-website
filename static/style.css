@@ -12,6 +12,16 @@ html, body {
     font-size: 4vw;
 }
 
+.table {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: stacked */
+  gap: 1.25rem; /* 10px → 0.625rem */
+}
+
+.row {
+  display: contents;
+}
+
 .review {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -229,6 +239,10 @@ input, textarea {
 @media (min-width: 68rem) {
     .wrapper {
         justify-content: left;
+    }
+
+    .table {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .wrapper-contents {
