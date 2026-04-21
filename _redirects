@@ -1,8 +1,8 @@
 /success /success.html
-/pricing /
-/security /
-/reviews /
-/availability /
-/system /
-/qualifications /
-/experience /
+/pricing /?page=pricing
+/security /?page=security
+/reviews /?page=reviews
+/availability /?page=availability
+/system /?page=system
+/qualifications /?page=qualifications
+/experience /?page=experience
