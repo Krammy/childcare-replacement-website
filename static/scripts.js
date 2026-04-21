@@ -2,10 +2,6 @@ let img = document.getElementById('profilepic');
 
 let isSpinning = false;
 img.addEventListener('click', () => {
-    // reset URL
-    const new_url = window.location.protocol + "//" + window.location.host;
-    window.history.replaceState({}, "home", new_url);
-
     if (isSpinning) {
         return;
     }
@@ -88,7 +84,11 @@ let current = null;
 
 function showPage(targetId) {
     // change URL
-    let new_url = window.location.protocol + "//" + window.location.host + "/" + targetId;
+    let end_bit = "/" + targetId;
+    if (end_bit == "/overview") {
+        end_bit = "";
+    }
+    let new_url = window.location.protocol + "//" + window.location.host + end_bit;
     window.history.replaceState( {} , targetId, new_url);
 
     const next = document.getElementById(targetId);
@@ -138,8 +138,8 @@ if (end_bit != "/") {
     if (el != null) {
         el.click();
     } else {
-        document.querySelector('[data-target="pricing"]').click();
+        document.querySelector('[data-target="overview"]').click();
     }
 } else {
-    document.querySelector('[data-target="pricing"]').click();
+    document.querySelector('[data-target="overview"]').click();
 }

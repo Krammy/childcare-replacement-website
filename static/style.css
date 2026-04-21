@@ -114,7 +114,7 @@ p:last-child, ul:last-child {
     padding-bottom: 0;
 }
 
-h2, h3 {
+h2, h3, h4 {
     color: rgb(14, 37, 94);
     margin-bottom: 1rem;
 }
@@ -142,6 +142,10 @@ h2 {
 
 h3 {
     font-size: 1.05rem;
+}
+
+h4 {
+    font-size: 1rem;
 }
 
 @keyframes shimmer {
