@@ -1,8 +1,8 @@
 /success /success.html
-/pricing /
-/security /
-/reviews /
-/availability /
-/system /
-/qualifications /
-/experience /
+/pricing /:splat
+/security /:splat
+/reviews /:splat
+/availability /:splat
+/system /:splat
+/qualifications /:splat
+/experience /:splat
