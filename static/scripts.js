@@ -87,12 +87,12 @@ const pages = document.querySelectorAll('.page');
 let current = null;
 
 function showPage(targetId) {
-    const next = document.getElementById(targetId);
-    if (next === current) return;
-
     // change URL
     let new_url = window.location.protocol + "//" + window.location.host + "/" + targetId;
     window.history.replaceState( {} , targetId, new_url);
+
+    const next = document.getElementById(targetId);
+    if (next === current) return;
 
     const fadeIn = () => {
         if (current) {
