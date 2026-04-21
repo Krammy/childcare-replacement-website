@@ -130,14 +130,8 @@ window.addEventListener('beforeunload', function(e) {
     }
 });
 
-const params = new URLSearchParams(window.location.search);
-const page = params.get('page');
-
 // get page end bit after slash
 let end_bit = window.location.pathname;
-if (end_bit == "/" && page != null) {
-    end_bit = "/" + page;
-}
 
 if (end_bit != "/") {
     const el = document.querySelector(`[data-target="${end_bit.substring(1)}"]`);
