@@ -306,28 +306,6 @@ input, textarea {
     opacity: 0.7;
 }
 
-#submit:disabled::before {
-    animation: none;
-}
-
-#submit::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -40%; /* 👈 start OFF the button */
-    width: 40%;
-
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,0.25),
-        transparent
-    );
-    
-    animation: shimmer 4s ease-in infinite;
-}
-
 nav {
     display: flex;
     flex-wrap: wrap;
