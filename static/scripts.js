@@ -3,8 +3,8 @@ let img = document.getElementById('profilepic');
 let isSpinning = false;
 img.addEventListener('click', () => {
     // reset URL
-    let new_url = window.location.protocol + "//" + window.location.host;
-    window.history.replaceState( {} , targetId, new_url);
+    const new_url = window.location.protocol + "//" + window.location.host;
+    window.history.replaceState({}, "home", new_url);
 
     if (isSpinning) {
         return;
